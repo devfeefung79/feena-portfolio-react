@@ -1,0 +1,75 @@
+.project {
+  padding: 24px 48px;
+}
+
+.project h2 {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.link {
+  margin-bottom: 10px; 
+}
+
+.link button {
+  background: hsl(147, 85%, 33%);
+  opacity: 80%;
+  color: #fff;
+  height: 30px;
+  width: fit-content;
+  margin: 2px 4px;
+  box-shadow: none;
+  text-transform: none;
+  font-family: 'Merriweather';
+  min-width: 64px;
+  padding: 0 16px;
+  border-radius: 35px;
+  align-items: center;
+  display: inline-flex;
+  font-weight: 500;
+  justify-content: center;
+  outline: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  border-style: none;
+}
+
+.link button:hover {
+  opacity: 100%;
+}
+
+.project ul {
+  margin-top: 0px;
+}
+
+.technologies p, .functions p {
+  margin-bottom: 3px;
+}
+
+.technologies .chip {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  margin: 2px 4px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  border: 2px solid #8dd6ae;
+  color: #066d34;
+  font-family: 'Merriweather';
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  line-height: 20px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 12px;
+  position: relative;
+  text-decoration: none;
+  transition-duration: .28s;
+  transition-property: box-shadow,opacity;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  vertical-align: middle;
+  white-space: nowrap;
+}

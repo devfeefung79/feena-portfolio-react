@@ -1,0 +1,33 @@
+.about-me {
+  padding: 24px 48px;
+}
+
+.about-me .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-me .card {
+  flex-basis: 250px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.about-me img {
+  margin: 10px 0px;
+  height: 150px;
+  min-width: 150px;
+  width: 150px;
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  border: 8px groove rgba(255,186,0,.5019607843);
+}
