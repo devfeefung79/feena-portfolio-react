@@ -1,33 +1,51 @@
 .about-me {
-  padding: 24px 48px;
+    padding: 48px 72px 24px 72px;
 }
 
 .about-me .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.about-me .card {
-  flex-basis: 250px;
-  flex-grow: 1;
-  text-align: center;
+.about-me .picture {
+    flex-basis: 20%;
 }
 
-.about-me img {
-  margin: 10px 0px;
-  height: 150px;
-  min-width: 150px;
-  width: 150px;
-  align-items: center;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  line-height: normal;
-  position: relative;
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
-  border: 8px groove rgba(255,186,0,.5019607843);
+.about-me .picture:nth-child(1) {
+    padding: 24px 0 0 0;
+}
+
+.about-me .picture:nth-child(2) {
+    padding: 72px 0 0 0;
+}
+
+.about-me .content {
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+
+.about-me .content div:nth-child(1) {
+    margin-bottom: 48px;
+}
+
+.about-me .content h2 {
+    margin-bottom: 8px;
+    font-family: var(--heading-font-family);
+    color: var(--section-subheading-text-color);
+    text-align: left;
+}
+
+@media (max-width: 750px) {
+    .about-me .content {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me .picture {
+        padding: 12px 12px 0 0 !important;
+    }
 }

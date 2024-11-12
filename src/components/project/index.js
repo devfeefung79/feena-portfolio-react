@@ -1,70 +1,39 @@
+import CustomProjectCardContainer from '../custom/customProjectCardContainer';
+import CustomSectionHeading from '../custom/customSectionHeading';
+
+import BonufoScreen1 from '../../assets/project-bonufo/screen1.jpeg';
+import BonufoScreen2 from '../../assets/project-bonufo/screen2.jpeg';
+import BonufoScreen3 from '../../assets/project-bonufo/screen3.jpeg';
+import BonufoScreen4 from '../../assets/project-bonufo/screen4.jpeg';
+import BonufoScreen5 from '../../assets/project-bonufo/screen5.jpeg';
+import BonufoScreen6 from '../../assets/project-bonufo/screen6.jpeg';
+import BonufoScreen7 from '../../assets/project-bonufo/screen7.jpeg';
+import BonufoScreen8 from '../../assets/project-bonufo/screen8.jpeg';
+
+import RecipenScreen1 from '../../assets/project-recipen/screen1.jpeg';
+import RecipenScreen2 from '../../assets/project-recipen/screen2.jpeg';
+import RecipenScreen3 from '../../assets/project-recipen/screen3.jpeg';
+import RecipenScreen4 from '../../assets/project-recipen/screen4.jpeg';
+import RecipenScreen5 from '../../assets/project-recipen/screen5.jpeg';
+import RecipenScreen6 from '../../assets/project-recipen/screen6.jpeg';
+
+import { projectInfo } from '../../data/data';
+
 import './index.css';
 
-import Slideshow from '../slideshow';
-import Screen1 from '../../assets/project-bonufo/screen1.jpeg';
-import Screen2 from '../../assets/project-bonufo/screen2.jpeg';
-import Screen3 from '../../assets/project-bonufo/screen3.jpeg';
-import Screen4 from '../../assets/project-bonufo/screen4.jpeg';
-import Screen5 from '../../assets/project-bonufo/screen5.jpeg';
-import Screen6 from '../../assets/project-bonufo/screen6.jpeg';
-import Screen7 from '../../assets/project-bonufo/screen7.jpeg';
-import Screen8 from '../../assets/project-bonufo/screen8.jpeg';
+const Project = () => {
 
-function Project() {
-
-  const projectInfo = {
-    title: 'English Writing Response Platform - BONUFO',
-    summary: 'A platform to enhance English writing skill as a learner or give feedback to others\' essay as a tutor',
-    functions: [
-      'Register for an account as a learner or a tutor',
-      'Search questions with criteria (keyword, topic, question type, related exam)',
-      'Write an essay responded to a question (Learner)',
-      'Choose a marking scheme for an essay for particular exam preparation, e.g. IELTS, CELPIP (Learner)',
-      'Give score and comment to an essay (Tutor)',
-      'View saved questions in profile page',
-      'View previous submission and the corresponding average score calculated (Learner)',
-    ],
-    technologies: [
-      'React','TypeScript','HTML','CSS','Semantic UI','NodeJS','ExpressJS','JWT','MongoDB'
-    ],
-    demoLink: 'https://bonufo-react.vercel.app/',
-    codeLink1: 'https://github.com/devfeefung79/bonufo-react',
-    codeLink2: 'https://github.com/devfeefung79/bonufo-express',
-  }
-
-  const projectImage = [
-    Screen1, Screen2, Screen3, Screen4, Screen5, Screen6, Screen7, Screen8
-  ];
+  const projectImages = {
+    1: [BonufoScreen1, BonufoScreen2, BonufoScreen3, BonufoScreen4, BonufoScreen5, BonufoScreen6, BonufoScreen7, BonufoScreen8],
+    2: [RecipenScreen1, RecipenScreen2, RecipenScreen3, RecipenScreen4, RecipenScreen5, RecipenScreen6],
+  };+7
 
   return (
     <div className="project">
-      <h1>Project</h1>
-      <div className='card'>
-        <div className='link'>
-          <a href={projectInfo.demoLink} target="_blank">
-            <button>Live Demo</button>
-          </a>
-          <a href={projectInfo.codeLink1} target="_blank">
-            <button>Source Code (Frontend)</button>
-          </a>
-          <a href={projectInfo.codeLink2} target="_blank">
-            <button>Source Code (Backend)</button>
-          </a>
-        </div>
-        <h2>{projectInfo.title}</h2>
-        <Slideshow images={projectImage}/>
-        <p>{projectInfo.summary}</p>
-        <div className='functions'>
-          <p>Functions:</p>
-          <ul>
-            {projectInfo.functions.map((fn) => <li>{fn}</li>)}
-          </ul>
-        </div>
-        <div className='technologies'>
-          <p>Technologies used:</p>
-          {projectInfo.technologies.map((tech) => <div className='chip'>{tech}</div>)}
-        </div>
-      </div>
+      <CustomSectionHeading text="Projects."/>
+      {projectInfo && projectInfo.map((info) => 
+        <CustomProjectCardContainer key={info.id} projectInfo={info} projectImages={projectImages[info.id]} />
+      )}
     </div>
   );
 }
