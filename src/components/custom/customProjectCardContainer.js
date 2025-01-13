@@ -6,11 +6,11 @@ import CustomChip from './customChip';
 
 const customProjectCardContainer = ({ projectInfo, projectImages }) => {
     return (
-        <div className="customProjectCardContainer slide-right">
+        <div className="customProjectCardContainer slide-left">
             <div className='link'>
                 {projectInfo && projectInfo.links.map((item, index) =>
                     <a href={item.link} target="_blank" key={`${projectInfo.id}-links-${index}`}>
-                        <CustomButton type={item.type === 'demo' ? 'primary' : null} text={item.text} />
+                        <CustomButton text={item.text} />
                     </a>)}
             </div>
             <div className='content'>
@@ -31,7 +31,7 @@ const customProjectCardContainer = ({ projectInfo, projectImages }) => {
                     </div>
                     <div className='technologies'>
                         <p>Technologies:</p>
-                        {projectInfo.technologies.map((tech) => <CustomChip text={tech}/>)}
+                        {projectInfo.technologies.map((tech) => <CustomChip key={`${projectInfo.id}-technologies-${tech}`} text={tech}/>)}
                     </div>
                 </div>
             </div>

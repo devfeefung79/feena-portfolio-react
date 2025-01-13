@@ -26,10 +26,10 @@ const Project = () => {
   const projectImages = {
     1: [BonufoScreen1, BonufoScreen2, BonufoScreen3, BonufoScreen4, BonufoScreen5, BonufoScreen6, BonufoScreen7, BonufoScreen8],
     2: [RecipenScreen1, RecipenScreen2, RecipenScreen3, RecipenScreen4, RecipenScreen5, RecipenScreen6],
-  };+7
+  };
 
   return (
-    <div className="project">
+    <div id="projects" className="project">
       <CustomSectionHeading text="Projects."/>
       {projectInfo && projectInfo.map((info) => 
         <CustomProjectCardContainer key={info.id} projectInfo={info} projectImages={projectImages[info.id]} />

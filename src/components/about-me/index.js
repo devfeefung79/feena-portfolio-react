@@ -9,7 +9,7 @@ import './index.css';
 
 const AboutMe = () => {
   return (
-    <div className="about-me">
+    <div id="about" className="about-me">
       <CustomSectionHeading text="About Me."/>
       <div className='container'>
         <div className='picture slide-top'>

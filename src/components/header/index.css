@@ -1,6 +1,9 @@
 .header {
     padding: 48px 0;
     background-color: var(--background-color-dark-green);
+}
+
+.header .container {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -9,12 +12,12 @@
     gap: 30px;
 }
 
-.header .picture-container {
+.header .container .picture-container {
     flex: 5;
     text-align: left;
 }
 
-.header .picture-container img {
+.header .container .picture-container img {
     background-color: var(--background-color-creamy-white);
     padding: 12px 60px 12px 0;
     height: 300px;
@@ -22,12 +25,12 @@
     border-radius: 0 2px 2px 0;
 }
 
-.header .content {
+.header .container .content {
     flex: 5;
     text-align: left;
 }
 
-.header .content h1 {
+.header .container .content h1 {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 8px;
@@ -37,12 +40,12 @@
     font-weight: 400;
 }
 
-.header .content h1 .name {
+.header .container .content h1 .name {
     color: var(--header-highlight-text-color);
     font-weight: 500;
 }
 
-.header .content p {
+.header .container .content p {
     margin-top: 10px;
     margin-bottom: 8px;
     font-family: var(--heading-font-family);
@@ -52,23 +55,23 @@
 }
 
 @media (min-width: 900px) {
-    .header {
+    .header .container {
         gap: 0;
     }
 }
 
 @media (min-width: 700px) {
-    .header .picture {
+    .header .container .picture {
         flex: 3;
     }
-    .header .content {
+    .header .container .content {
         flex: 7;
     }
 }
 
 @media (max-width: 600px) {
-    .header .content h1,
-    .header .content p {
+    .header .container .content h1,
+    .header .container .content p {
         text-align: center;
     }
 }
