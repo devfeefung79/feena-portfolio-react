@@ -29,6 +29,11 @@ const ContactMe = () => {
                     <CustomLink url={contactInfo.github} text="github.com/devfeefung79" icon={mdiGithub} isOpenNewTab/>
                 </div>
             </div>
+            <br/>
+            <br/>
+            <div className="footer">
+                <span>Copyright © 2025. Build with React and JavaScript.</span>
+            </div>
         </div>
     );
 }

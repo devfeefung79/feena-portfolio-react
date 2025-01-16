@@ -55,3 +55,15 @@
         flex-basis: 100%; /* Full width */
     }
 }
+
+.contact-me .footer {
+    color: var(--header-main-text-color);
+    font-size: var(--font-size-extra-small);
+    font-family: var(--heading-font-family);
+    text-align: center;
+}
+
+.contact-me .footer span {
+    color: var(--header-main-text-color);
+    font-weight: 400;
+}

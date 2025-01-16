@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <div id="header" className="header">
       <div className='header-links'>
-        <CustomLink url='#about' text='About'/>
-        <CustomLink url='#projects' text='Projects'/>
-        <CustomLink url='#contact' text='Contact'/>
+        <CustomLink isOnHeader url='#about' text='About'/>
+        <CustomLink isOnHeader url='#projects' text='Projects'/>
+        <CustomLink isOnHeader url='#contact' text='Contact'/>
       </div>
       <div className='container'>
         <div className='picture-container slide-right'>

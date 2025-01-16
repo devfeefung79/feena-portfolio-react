@@ -2,6 +2,7 @@ import './App.css';
 
 import AboutMe from './components/about-me';
 import ContactMe from './components/contact-me';
+import CustomScrollToTopButton from './components/custom/customScrollToTopButton';
 import Header from './components/header/index';
 import Project from './components/project';
 
@@ -12,6 +13,7 @@ function App() {
       <AboutMe/>
       <Project/>
       <ContactMe/>
+      <CustomScrollToTopButton/>
     </div>
   );
 }
