@@ -1,0 +1,69 @@
+.contact-me {
+    margin: 24px 0 0 0;
+    padding: 24px 72px;
+    background-color: var(--background-color-dark-green);
+}
+
+.contact-me h2 {
+    color: var(--header-main-text-color);
+    font-size: var(--font-size-large);
+    font-family: var(--heading-font-family);
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+}
+
+.contact-me h3 {
+    color: var(--header-highlight-text-color);
+    font-size: var(--font-size-intermediate);
+    font-family: var(--heading-font-family);
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 0;
+}
+
+.contact-me .container {
+    display: flex;
+    flex-direction: row;
+    gap: 16vh;
+    align-items: start;
+}
+
+.contact-me .container .contact-me-form {
+    flex-basis: 60%;
+    flex-grow: 1;
+}
+
+.contact-me .container .links {
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+
+.contact-me .container .links .customLink {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .contact-me .container {
+        flex-direction: column; /* Switch to column layout */
+        gap: 20px; /* Reduce gap between sections */
+    }
+
+    .contact-me .container .contact-me-form,
+    .contact-me .container .links {
+        flex-basis: 100%; /* Full width */
+    }
+}
+
+.contact-me .footer {
+    color: var(--header-main-text-color);
+    font-size: var(--font-size-extra-small);
+    font-family: var(--heading-font-family);
+    text-align: center;
+}
+
+.contact-me .footer span {
+    color: var(--header-main-text-color);
+    font-weight: 400;
+}

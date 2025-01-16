@@ -1,14 +1,47 @@
-body {
-  margin: 0;
-  color: #242424;
-  font-family: 'Raleway', 'Merriweather', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --background-color-light-creamy-white: #f3efe5;
+    --background-color-creamy-white: #faf3e0;
+    --background-color-dark-green: #6b8f71;
+    --background-color-light-green: rgb(167, 194, 166, 50%);
+
+    --header-main-text-color: #faf3e0;
+    --header-highlight-text-color: #ffc997;
+    --section-heading-text-color: #488e63;
+    --section-subheading-text-color: #c3966e;
+    --main-text-color: #464646;
+
+    --button-bg-color-white: #f3f3f3;
+    --button-hover-bg-color-white: #d8d8d8;
+
+    --bagde-border-color: #6b8f71;
+    --red-border-color: #db5353;
+
+    --heading-font-family: "Lora";
+    --main-text-font-family: "Raleway";
+
+    --font-size-extra-large: 60px;
+    --font-size-large: 36px;
+    --font-size-medium: 32px;
+    --font-size-intermediate: 24px;
+    --font-size-small: 18px;
+    --font-size-extra-small: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color-light-creamy-white);
+    color: var(--main-text-color);
+    margin: 0;
+    font-family: "Raleway", "Lora", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
 }

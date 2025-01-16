@@ -1,93 +1,77 @@
 .header {
-  padding: 24px 60px;
-  background-color: rgba(255, 245, 230, 0.5);
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    padding: 48px 0;
+    background-color: var(--background-color-dark-green);
 }
 
-.header button {
-  background: hsl(147, 85%, 33%);
-  opacity: 80%;
-  color: #fff;
-  height: 30px;
-  width: fit-content;
-  margin: 2px 4px;
-  box-shadow: none;
-  text-transform: none;
-  font-family: 'Merriweather';
-  min-width: 64px;
-  padding: 0 16px;
-  border-radius: 35px;
-  align-items: center;
-  display: inline-flex;
-  font-weight: 500;
-  justify-content: center;
-  outline: 0;
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  border-style: none;
+.header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-.header button:hover {
-  opacity: 100%;
+.header .container .picture-container {
+    flex: 5;
+    text-align: left;
 }
 
-
-.header .picture {
-  flex: 5;
-  text-align: center;
+.header .container .picture-container img {
+    background-color: var(--background-color-creamy-white);
+    padding: 12px 60px 12px 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 0 2px 2px 0;
 }
 
-.header .picture img {
-  padding: 30px;
-  height: 280px;
-  width: 280px;
-  border-radius: 50%;
+.header .container .content {
+    flex: 5;
+    text-align: left;
 }
 
-.header .content {
-  flex: 5;
-  text-align: left;
+.header .container .content h1 {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: var(--header-main-text-color);
+    font-family: var(--heading-font-family);
+    font-size: var(--font-size-extra-large);
+    font-weight: 400;
 }
 
-.header .content p {
-  margin-bottom: 28px;
+.header .container .content h1 .name {
+    color: var(--header-highlight-text-color);
+    font-weight: 500;
 }
 
-.header .content button span {
-  margin-left: 3px;
+.header .container .content p {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-family: var(--heading-font-family);
+    color: var(--header-main-text-color);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
 }
 
-.header .content div {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #636262;
-}
-
-.header .content h1 {
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-size: 36px;
+@media (min-width: 900px) {
+    .header .container {
+        gap: 0;
+    }
 }
 
 @media (min-width: 700px) {
-  .header .picture {
-    flex: 3;
-  }
-  .header .content {
-    flex: 7;
-  }
+    .header .container .picture {
+        flex: 3;
+    }
+    .header .container .content {
+        flex: 7;
+    }
 }
 
 @media (max-width: 600px) {
-  .header .content h1, .header .content div {
-    text-align: center;
-  }
+    .header .container .content h1,
+    .header .container .content p {
+        text-align: center;
+    }
 }

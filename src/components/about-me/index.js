@@ -1,22 +1,39 @@
-import './index.css';
-
 import CoffeeImage from '../../assets/coffee.jpg';
 import WorkImage from '../../assets/work.jpeg';
+import AnimationOnScroll from '../animation-on-scroll';
+import CustomImageVerticalContainer from '../custom/customImageVerticalContainer';
+import CustomSectionHeading from '../custom/customSectionHeading';
 
-function AboutMe() {
+import { aboutMeInfo } from '../../data/data';
+
+import './index.css';
+
+const AboutMe = () => {
   return (
-    <div className="about-me">
-      <h1>About Me</h1>
+    <div id="about" className="about-me">
+      <CustomSectionHeading text="About Me."/>
       <div className='container'>
-        <div className='card'>
-          <img src={CoffeeImage} alt="coffee.jpg"/>
-          <h2>My Life</h2>
-          <p>A morning coffee is my energy for the day! I am a cheerful but calm individual (probably a bit shy as well). I love solving puzzles, watching movies and travelling. Never get tired about exploring different places in the world! Also, I enjoy chatting and creating memory with my friends and family.</p>
+        <div className='picture'>
+          <AnimationOnScroll animationClass="slide-top">
+              <CustomImageVerticalContainer imageSrc={CoffeeImage} altText="coffee.jpg"/>
+          </AnimationOnScroll>
         </div>
-        <div className='card'>
-          <img src={WorkImage} alt="work.jpg"/>
-          <h2>My Aspiration</h2>
-          <p>It is fulfilling to develop software solutions that bring values to others with my expertise. I believe dedication is the key attribute of a person when pursuing great achievements. I like to study IT knowledge and new technologies continually, so as to enhance my technical abilities and make great contributions in my career.</p>
+        <div className='picture'>
+          <AnimationOnScroll animationClass="slide-top">
+              <CustomImageVerticalContainer imageSrc={WorkImage} altText="work.jpg"/>
+          </AnimationOnScroll>
+        </div>
+        <div className='content'>
+          <AnimationOnScroll animationClass="slide-top">
+              <div>
+                <h2>My Life</h2>
+                <p>{aboutMeInfo.lifeDesc}</p>
+              </div>
+              <div>
+                <h2>My Aspiration</h2>
+                <p>{aboutMeInfo.aspirationDesc}</p>
+              </div>
+          </AnimationOnScroll>
         </div>
       </div>
     </div>
