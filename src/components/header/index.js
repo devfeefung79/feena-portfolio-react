@@ -1,6 +1,6 @@
 import './index.css';
 
-import Picture from '../../assets/profile.jpeg';
+import Picture from '../../assets/profile-3.jpg';
 import AnimationOnScroll from '../animation-on-scroll';
 import CustomLink from '../custom/customLink';
 
@@ -12,6 +12,7 @@ const Header = () => {
       <div className='header-links'>
         <CustomLink isOnHeader url='#about' text='About'/>
         <CustomLink isOnHeader url='#projects' text='Projects'/>
+        <CustomLink isOnHeader url='#skills' text='Skills'/>
         <CustomLink isOnHeader url='#contact' text='Contact'/>
       </div>
       <div className='container'>

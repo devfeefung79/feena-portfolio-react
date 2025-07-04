@@ -1,13 +1,75 @@
 const headerInfo = {
     name: "Feena Fung",
-    title: "Full-stack developer",
-    summary: 'and I’m a Software Developer',
+    summary: 'and I’m a Software Engineer',
 } 
 
 const aboutMeInfo = {
     lifeDesc: "A morning coffee is my energy for the day! I am a cheerful but calm individual. I love solving puzzles, watching movies and travelling. Never get tired about exploring different places in the world! Also, I enjoy chatting and creating memory with my friends and family.",
     aspirationDesc: "It is fulfilling to develop software solutions that bring values to others with my expertise. I believe dedication is the key attribute of a person when pursuing great achievements. I like to study IT knowledge and new technologies continually, so as to enhance my technical abilities and make great contributions in my career."
 }
+
+const skillsInfo = [
+	{
+		id: 1, 
+		category: 'Frontend Development',
+		skills: [
+			'React', 
+			'Redux',
+			'Next.js', 
+			'TypeScript',
+			'JavaScript',
+			'HTML', 
+			'CSS/LESS/SCSS',
+			'Jest',
+			'Selenium',
+			'Figma',
+		]
+	}, {
+		id: 2, 
+		category: 'Cloud & DevOps',
+		skills: [
+			'AWS', 
+			'Docker', 
+			'Kubernetes',
+			'Git',
+			'Jenkins',
+			'CI/CD',
+			'Prometheus',
+			'Grafana',
+		]
+	}, {
+		id: 3, 
+		category: 'APIs & Integration',
+		skills: [
+			'RESTful APIs',
+			'Swagger',
+			'Postman', 
+			'Kafka', 
+			'JMeter'
+		]
+	}, { 
+		id: 4, 
+		category: 'Backend & Data Engineering',
+		skills: [
+			'Java', 
+			'Spring Boot', 
+			'Node.js', 
+			'Express', 
+			'Python', 
+			'FastAPI', 
+			'MySQL', 
+			'MongoDB',
+			'Apache Solr',
+			'AWS S3',
+			'AWS RedShift',
+			'Apache Airflow',
+			'Extract, Transform, Load (ETL)',
+			'Informatica',
+			'Tableau',
+			'Microservices',
+		]
+	},
+]
 
 const projectInfo = [
 	{
@@ -78,11 +140,11 @@ const projectInfo = [
 ]
 
 const contactInfo = {
-	resume: "https://drive.google.com/file/d/18ulha-L8nHwI0LHfysLskoL0q6IQQu2t/view?usp=sharing",
+	resume: "https://1drv.ms/b/c/e8b4d5ffb0213d56/EeA6VjIpx7JCpBoqLGLak_EBw-POqLyExM4uoNuV7NWrpw?e=cWSTQ0",
     email: "feenafungftl@gmail.com",
     linkedin: "https://www.linkedin.com/in/feena-fung/",
     github: "https://github.com/devfeefung79/",
 }
 
-export { aboutMeInfo, contactInfo, headerInfo, projectInfo };
+export { aboutMeInfo, contactInfo, headerInfo, projectInfo, skillsInfo }
 

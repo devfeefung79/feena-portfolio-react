@@ -1,6 +1,7 @@
 .header {
     padding: 48px 0;
     background-color: var(--background-color-dark-green);
+    box-shadow: 0 4px 16px rgba(107, 143, 113, 0.15);
 }
 
 .header .container {
@@ -23,6 +24,7 @@
     height: 300px;
     width: 300px;
     border-radius: 0 2px 2px 0;
+    box-shadow: 0 4px 16px rgba(107, 143, 113, 0.15);
 }
 
 .header .container .content {

@@ -1,6 +1,6 @@
 import { mdiArrowUpThick } from '@mdi/js';
 import Icon from '@mdi/react';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import './custom.css';
 
 const CustomScrollToTopButton = () => {
