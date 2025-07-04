@@ -1,0 +1,27 @@
+.skills {
+    padding: 24px 72px 48px 72px;
+}
+
+.skills .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.skills .container .content {
+    flex-basis: 20%;
+    flex-grow: 1;
+    background-color: var(--background-color-creamy-white);
+    border-radius: 2px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(107, 143, 113, 0.15);
+}
+
+.skills .container .content h2 {
+    margin-bottom: 8px;
+    font-family: var(--heading-font-family);
+    color: var(--section-subheading-text-color);
+    text-align: left;
+    margin-bottom: 24px;
+}
