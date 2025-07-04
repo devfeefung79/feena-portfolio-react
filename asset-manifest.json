@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/feena-fung/static/css/main.7da32ac3.css",
+    "main.js": "/feena-fung/static/js/main.c6dc56b4.js",
+    "static/js/453.1322ce24.chunk.js": "/feena-fung/static/js/453.1322ce24.chunk.js",
+    "static/media/profile-3.jpg": "/feena-fung/static/media/profile-3.fbc17f39d270b4b1a2d4.jpg",
+    "static/media/screen1.jpeg": "/feena-fung/static/media/screen1.c4cfcc2f3be2fa4e89ed.jpeg",
+    "static/media/screen3.jpeg": "/feena-fung/static/media/screen3.c8a7994890110b1cfa69.jpeg",
+    "static/media/screen2.jpeg": "/feena-fung/static/media/screen2.ef725fb68738878b6bac.jpeg",
+    "static/media/screen6.jpeg": "/feena-fung/static/media/screen6.ac0ab6647669cc1795b7.jpeg",
+    "static/media/screen7.jpeg": "/feena-fung/static/media/screen7.96f23d364fa7f7be28dd.jpeg",
+    "static/media/screen8.jpeg": "/feena-fung/static/media/screen8.35eb7a692513d8bb8a83.jpeg",
+    "static/media/screen4.jpeg": "/feena-fung/static/media/screen4.7deaa0f0da87b166606b.jpeg",
+    "static/media/screen5.jpeg": "/feena-fung/static/media/screen5.e8f3686de8c1cb369a5d.jpeg",
+    "static/media/work.jpeg": "/feena-fung/static/media/work.29953cf878a5771d6668.jpeg",
+    "static/media/coffee.jpg": "/feena-fung/static/media/coffee.47055fcc6f6644eb8569.jpg",
+    "index.html": "/feena-fung/index.html",
+    "main.7da32ac3.css.map": "/feena-fung/static/css/main.7da32ac3.css.map",
+    "main.c6dc56b4.js.map": "/feena-fung/static/js/main.c6dc56b4.js.map",
+    "453.1322ce24.chunk.js.map": "/feena-fung/static/js/453.1322ce24.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7da32ac3.css",
+    "static/js/main.c6dc56b4.js"
+  ]
+}
