@@ -55,7 +55,7 @@ import './custom.css';
                     </a>
                 </li>
                 <li key='vertical-navbar-resume'>
-                    <a href="#" rel="noopener noreferrer" onClick={handleDownloadResume} >
+                    <a onClick={handleDownloadResume}>
                         <Icon path={mdiFile} size={1}/>
                     </a>
                 </li>
