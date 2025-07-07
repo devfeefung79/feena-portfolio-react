@@ -9,6 +9,18 @@ import './custom.css';
 
     const [isVisible, setIsVisible] = useState(false);
 
+    const handleDownloadResume = () => {
+      const resumeFileName = contactInfo.resume;
+      const resumeFilePath = `${resumeFileName}`;
+  
+      const downloadLink = document.createElement("a");
+      downloadLink.href = resumeFilePath;
+      downloadLink.download = resumeFileName;
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+    };
+
     const handleScroll = () => {
         if (window.scrollY > 300) {
         setIsVisible(true);
@@ -27,14 +39,9 @@ import './custom.css';
     return (
         <nav className={`vertical-navbar ${isVisible ? "show" : ""}`}>
             <ul>
-                <li key='vertical-navbar-resume'>
-                    <a href={contactInfo.resume} target="_blank" rel="noopener noreferrer">
-                        <Icon path={mdiFile} size={1} />
-                    </a>
-                </li>
-                <li key='vertical-navbar-email'>
-                    <a href={`mailto:${contactInfo.email}`} target="_blank" rel="noopener noreferrer">
-                        <Icon path={mdiEmail} size={1} />
+                <li key='vertical-navbar-github'>
+                    <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">
+                        <Icon path={mdiGithub} size={1} />
                     </a>
                 </li>
                 <li key='vertical-navbar-linkedin'>
@@ -42,9 +49,14 @@ import './custom.css';
                         <Icon path={mdiLinkedin} size={1} />
                     </a>
                 </li>
-                <li key='vertical-navbar-github'>
-                    <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">
-                        <Icon path={mdiGithub} size={1} />
+                <li key='vertical-navbar-email'>
+                    <a href={`mailto:${contactInfo.email}`} target="_blank" rel="noopener noreferrer">
+                        <Icon path={mdiEmail} size={1} />
+                    </a>
+                </li>
+                <li key='vertical-navbar-resume'>
+                    <a href="#" rel="noopener noreferrer" onClick={handleDownloadResume} >
+                        <Icon path={mdiFile} size={1}/>
                     </a>
                 </li>
             </ul>

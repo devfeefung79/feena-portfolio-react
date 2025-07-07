@@ -140,7 +140,7 @@ const projectInfo = [
 ]
 
 const contactInfo = {
-	resume: "https://1drv.ms/b/c/e8b4d5ffb0213d56/EeA6VjIpx7JCpBoqLGLak_EBw-POqLyExM4uoNuV7NWrpw?e=cWSTQ0",
+	resume: "resume_feena_fung.pdf",
     email: "feenafungftl@gmail.com",
     linkedin: "https://www.linkedin.com/in/feena-fung/",
     github: "https://github.com/devfeefung79/",
