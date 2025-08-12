@@ -1,8 +1,8 @@
 import './custom.css';
 
-const CustomChip = ({ text }) => {
+const CustomChip = ({ text, isPrimary }) => {
     return (
-        <div className='customChip'>{text}</div>
+        <div className={`customChip ${isPrimary ? "primary" : ""}`}>{text}</div>
     );
 }
 

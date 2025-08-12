@@ -9,9 +9,12 @@
     gap: 28px;
 }
 
-.skills .container .content {
+.skills .container div {
     flex-basis: 20%;
     flex-grow: 1;
+}
+
+.skills .container .content {
     background-color: var(--background-color-creamy-white);
     border-radius: 2px;
     padding: 24px;

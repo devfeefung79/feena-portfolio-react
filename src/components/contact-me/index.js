@@ -19,12 +19,6 @@ const ContactMe = () => {
                 : <h3>Send me a message!</h3> }
             <div className="container">
                 <ContactMeForm handleShowSuccessMessage={handleShowSuccessMessage}/>
-                {/* <div className="links">
-                    <CustomLink url={contactInfo.resume} text="View My Resume" icon={mdiFile} isOpenNewTab/>
-                    <CustomLink url={`mailto:${contactInfo.email}`} text={contactInfo.email} icon={mdiEmail} isOpenNewTab/>
-                    <CustomLink url={contactInfo.linkedin} text="linkedin.com/in/feena-fung" icon={mdiLinkedin} isOpenNewTab/>
-                    <CustomLink url={contactInfo.github} text="github.com/devfeefung79" icon={mdiGithub} isOpenNewTab/>
-                </div> */}
             </div>
             <br/>
             <br/>
