@@ -1,19 +1,19 @@
 :root {
     --background-color-light-creamy-white: #f3efe5;
     --background-color-creamy-white: #faf3e0;
-    --background-color-dark-green: #548560;
+    --background-color-dark-green: #4b7754;
     --background-color-light-green: #b9dbb759;
 
     --header-main-text-color: #faf3e0;
     --header-highlight-text-color: #ffc997;
-    --section-heading-text-color: #488e63;
-    --section-subheading-text-color: #bb8250;
+    --section-heading-text-color: #378053;
+    --section-subheading-text-color: #a17048;
     --main-text-color: #464646;
 
     --button-bg-color-white: #f3f3f3;
     --button-hover-bg-color-white: #d8d8d8;
 
-    --bagde-border-color: #55805e;
+    --bagde-border-color: #4b7754;
     --red-border-color: #db5353;
 
     --heading-font-family: "Lora";
