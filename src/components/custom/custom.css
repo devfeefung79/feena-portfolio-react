@@ -36,14 +36,17 @@
     box-shadow: 4px 4px 10px rgba(107, 143, 113, 0.15);
 }
 
-.customProjectCardContainer .project-header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+@media (min-width: 750px) {
+    .customProjectCardContainer .project-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
 }
 
 .customProjectCardContainer .link {
+    margin-top: 4px;
     margin-bottom: 24px;
 }
 
@@ -152,6 +155,35 @@
     cursor: not-allowed;
 }
 
+@media (max-width: 750px) {
+    .customStatusBadge {
+        display: none !important;
+    }
+}
+
+.customStatusBadge,
+.customStatusBadge.default {
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 18px;
+    padding: 6px 18px;
+    margin: 4px 6px 12px 6px;
+    width: fit-content;
+    transition: background 0.2s, box-shadow 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.customStatusBadge.active {
+    background: var(--bagde-bg-color-active);
+    color: var(--bagde-text-color-active);
+    border: 2px solid var(--bagde-border-color-active);
+}
+
+.customStatusBadge.inactive {
+    background: var(--bagde-bg-color-inactive);
+    color: var(--bagde-text-color-inactive);
+    border: 2px solid var(--bagde-border-color-inactive);
+}
+
 .customChip {
     background: var(--background-color-light-green, rgba(198, 216, 196, 0.5));
     color: var(--bagde-border-color, #8b8b8b);
@@ -167,8 +199,7 @@
 }
 
 .customChip:hover,
-.customChip:focus,
-.customChip.primary {
+.customChip:focus {
     background: var(--background-color-dark-green, #6b8f71);
     color: var(--header-main-text-color, #faf3e0);
     border-color: var(--section-heading-text-color, #488e63);

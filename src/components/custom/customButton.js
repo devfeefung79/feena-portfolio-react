@@ -3,8 +3,6 @@ import './custom.css';
 
 const CustomButton = ({ type, text, onClick, disabled, icon}) => {
 
-    console.log('CustomButton props:', { icon });
-
     switch (type) {
         case 'primary':
             return (

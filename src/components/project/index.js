@@ -17,6 +17,12 @@ import RecipenScreen4 from '../../assets/project-recipen/screen4.jpeg';
 import RecipenScreen5 from '../../assets/project-recipen/screen5.jpeg';
 import RecipenScreen6 from '../../assets/project-recipen/screen6.jpeg';
 
+import ExamGeneratorScreen1 from '../../assets/project-exam-generator/screen1.jpeg';
+import ExamGeneratorScreen2 from '../../assets/project-exam-generator/screen2.jpeg';
+import ExamGeneratorScreen3 from '../../assets/project-exam-generator/screen3.jpeg';
+import ExamGeneratorScreen4 from '../../assets/project-exam-generator/screen4.jpeg';
+import ExamGeneratorScreen5 from '../../assets/project-exam-generator/screen5.jpeg';
+
 import { projectInfo } from '../../data/data';
 
 import './index.css';
@@ -26,6 +32,7 @@ const Project = () => {
   const projectImages = {
     1: [BonufoScreen1, BonufoScreen2, BonufoScreen3, BonufoScreen4, BonufoScreen5, BonufoScreen6, BonufoScreen7, BonufoScreen8],
     2: [RecipenScreen1, RecipenScreen2, RecipenScreen3, RecipenScreen4, RecipenScreen5, RecipenScreen6],
+    3: [ExamGeneratorScreen1, ExamGeneratorScreen2, ExamGeneratorScreen3, ExamGeneratorScreen4, ExamGeneratorScreen5],
   };
 
   return (

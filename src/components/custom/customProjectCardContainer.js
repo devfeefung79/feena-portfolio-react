@@ -5,20 +5,21 @@ import AnimationOnScroll from '../animation-on-scroll';
 import Slideshow from '../slideshow';
 import CustomButton from './customButton';
 import CustomChip from './customChip';
+import CustomStatusBadge from './customStatusBadge';
 
 const customProjectCardContainer = ({ projectInfo, projectImages }) => {
     return (
         <AnimationOnScroll animationClass="slide-right">
             <div className="customProjectCardContainer">
                     <div className='project-header'>
-                        <div className='badge'>
-                            <CustomChip text={projectInfo.status} isPrimary/>
-                        </div>
                         <div className='link'>
                             {projectInfo && projectInfo.links.map((item, index) =>
                                 <a href={item.link} target="_blank" key={`${projectInfo.id}-links-${index}`}>
                                     <CustomButton text={item.text} icon={mapIconCode(item.icon)} />
                                 </a>)}
+                        </div>
+                        <div className='badge'>
+                            <CustomStatusBadge status={projectInfo.status}/>
                         </div>
                     </div>
                     <div className='content'>

@@ -18,21 +18,25 @@ const skillsInfo = [
 			'Next.js', 
 			'TypeScript',
 			'JavaScript',
-			'HTML', 
+			'HTML5', 
 			'CSS/LESS/SCSS',
+			'Angular',
 			'Jest',
 			'Selenium',
+			'UI/UX',
 			'Figma',
 		]
 	}, {
 		id: 2, 
 		category: 'Cloud & DevOps',
 		skills: [
-			'AWS', 
+			'AWS EC2', 
+			'AWS Lambda',
+			'Google Cloud Run',
 			'Docker', 
 			'Kubernetes',
-			'Git',
 			'Jenkins',
+			'Git',
 			'CI/CD',
 			'Prometheus',
 			'Grafana',
@@ -41,11 +45,15 @@ const skillsInfo = [
 		id: 3, 
 		category: 'APIs & Integration',
 		skills: [
-			'RESTful APIs',
+			'REST APIs',
 			'Swagger',
-			'Postman', 
+			'Postman',
+			'JMeter',
+			'JSON Web Token (JWT)', 
+			'Microservices',
 			'Kafka', 
-			'JMeter'
+			'Markdown',
+			'Google Analytics',
 		]
 	}, { 
 		id: 4, 
@@ -66,53 +74,94 @@ const skillsInfo = [
 			'Extract, Transform, Load (ETL)',
 			'Informatica',
 			'Tableau',
-			'Microservices',
 		]
 	},
 ]
 
 const projectInfo = [
-	
-      {
-		id: 2,
+	{
+		id: 3,
 		status: 'Active',
-		title: 'Recipe Platform',
-		summary: 'A website designed for food enthusiasts of all skill levels, offering a user-friendly interface to explore a diverse range of recipes',
+		title: 'AI Exam Generator',
+		summary: 'A platform that generates exam questions based on user input, leveraging Gemini AI to create personalized assessments',
 		functions: [
-			'Browse recipes by category or cusisine',
-			'Search recipes by keyword',
-			'View recipe details'
+			'Generate exam questions based on user input',
+			'Switch between preview and full modes to view questions',
+			'Download generated exams as DOC or PDF file'
 		],
 		technologies: [
-			'Angular',
+			'React',
 			'TypeScript',
-			'HTML',
-			'SCSS',
-			'Material UI',
-			'RxJS',
-			'Jasmine'
+			'Vite',
+			'Tailwind CSS',
+			'Radix UI',
+			'Python',
+			'FastAPI',
+			'Gemini AI',
+			'Docker',
+			'Google Cloud Run',
 		],
 		links: [
 			{
 				type: 'demo',
 				text: 'Live Demo',
-				link: 'https://recipen-angular.vercel.app/',
+				link: 'https://ai-exam-generator-react-app.vercel.app/',
 				icon: 'open-in-new',
 			},
 			{
 				type: 'frontend',
 				text: 'Repo',
-				link: 'https://github.com/devfeefung79/recipen-angular',
-				icon: 'angular',
+				link: 'https://github.com/devfeefung79/ai-exam-generator-react-app',
+				icon: 'react',
 			},
 			{
-				type: 'design',
-				text: 'Design',
-				link: 'https://www.figma.com/design/R6oiXN7KnbPDtJ34eoqBaw/Recipen?node-id=0-1&t=2QHEZaBbLv5Ore4R-1',
-				icon: 'pencil-ruler',
+				type: 'backend',
+				text: 'Repo',
+				link: 'https://github.com/devfeefung79/ai-exam-generator-fastapi-app',
+				icon: 'python',
 			}
 		],
-      },
+	},
+	{
+	id: 2,
+	status: 'Active',
+	title: 'Recipe Platform',
+	summary: 'A website designed for food enthusiasts of all skill levels, offering a user-friendly interface to explore a diverse range of recipes',
+	functions: [
+		'Browse recipes by category or cusisine',
+		'Search recipes by keyword',
+		'View recipe details'
+	],
+	technologies: [
+		'Angular',
+		'TypeScript',
+		'HTML',
+		'SCSS',
+		'Material UI',
+		'RxJS',
+		'Jasmine'
+	],
+	links: [
+		{
+			type: 'demo',
+			text: 'Live Demo',
+			link: 'https://recipen-angular.vercel.app/',
+			icon: 'open-in-new',
+		},
+		{
+			type: 'frontend',
+			text: 'Repo',
+			link: 'https://github.com/devfeefung79/recipen-angular',
+			icon: 'angular',
+		},
+		{
+			type: 'design',
+			text: 'Design',
+			link: 'https://www.figma.com/design/R6oiXN7KnbPDtJ34eoqBaw/Recipen?node-id=0-1&t=2QHEZaBbLv5Ore4R-1',
+			icon: 'pencil-ruler',
+		}
+	],
+	},
 	{
 		id: 1,
 		status: 'Under Revamp',
