@@ -10,18 +10,18 @@ const Skills = () => {
     return (
         <div id="skills" className="skills">
             <CustomSectionHeading text="Skills." />
-            <AnimationOnScroll animationClass="slide-top">
-                <div className="container">
-                    {skillsInfo.map((cat, index) => (
+            <div className="container">
+                {skillsInfo.map((cat, index) => (
+                    <AnimationOnScroll animationClass="slide-top">
                         <div key={index} className="content">
                             <h2>{cat.category}</h2>
                             {cat.skills.map((skill, skillIndex) => (
                                 <CustomChip key={skillIndex} text={skill} />
                             ))}
                         </div>
-                    ))}
-                </div>
-            </AnimationOnScroll>
+                    </AnimationOnScroll>
+                ))}
+            </div>
         </div>
     );
 }

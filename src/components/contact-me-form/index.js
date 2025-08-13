@@ -1,7 +1,7 @@
 import './index.css';
 
 import emailjs from '@emailjs/browser';
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import CustomButton from '../custom/customButton';
 
 const ContactMeForm = (props) => {

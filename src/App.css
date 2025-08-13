@@ -1,5 +1,10 @@
 /* Global Styles */
 
+.App {
+    max-width: 1530px;
+    margin: auto;
+}
+
 h2 {
     color: var(--main-text-color);
     font-family: var(--heading-font-family);

@@ -1,20 +1,27 @@
 :root {
     --background-color-light-creamy-white: #f3efe5;
     --background-color-creamy-white: #faf3e0;
-    --background-color-dark-green: #6b8f71;
-    --background-color-light-green: rgba(180, 202, 179, 0.5);
+    --background-color-dark-green: #4b7754;
+    --background-color-light-green: #b9dbb759;
 
     --header-main-text-color: #faf3e0;
     --header-highlight-text-color: #ffc997;
-    --section-heading-text-color: #488e63;
-    --section-subheading-text-color: #c3966e;
+    --section-heading-text-color: #378053;
+    --section-subheading-text-color: #a17048;
     --main-text-color: #464646;
 
     --button-bg-color-white: #f3f3f3;
     --button-hover-bg-color-white: #d8d8d8;
 
-    --bagde-border-color: #6b8f71;
-    --red-border-color: #db5353;
+    --bagde-border-color: #4b7754;
+    --bagde-text-color-active: rgb(204, 82, 0);
+    --bagde-text-color-inactive: rgb(88, 88, 88);
+
+    --bagde-border-color-active: rgba(236, 116, 35, 0.15);
+    --bagde-border-color-inactive: rgba(88, 88, 88, 0.15);
+
+    --bagde-bg-color-active: rgba(236, 116, 35, 0.1);
+    --bagde-bg-color-inactive: rgba(88, 88, 88, 0.1);
 
     --heading-font-family: "Lora";
     --main-text-font-family: "Raleway";
